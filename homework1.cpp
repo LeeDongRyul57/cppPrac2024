@@ -1,33 +1,18 @@
 #include <iostream>
 int main(){
-    int a,b,c;
-    std::cout<<"enter the number under 50"<<std::endl;
-    std::cin>>a>>b>>c;
-    while(a>50){
-        std::cout<<"re enter first num"<<std::endl;
-        std::cin>>a;
+   std::cout<<"enter the number until you enter 0"<<std::endl;
+   int a;
+   int sum=0;
+   while(true){
+   std::cin>>a;
+   if(a==0){
+    break;
+   }
+    sum+=a;
+    std::cout<<"sum is === "<<sum<<std::endl;
     }
-    while(b>50){
-        std::cout<<"re enter second num"<<std::endl;
-        std::cin>>b;
-    }
-    while(c>50){
-        std::cout<<"re enter third num"<<std::endl;
-        std::cin>>c;
-    }
-    if(a>b){
-        if(a>c){
-            std::cout<<"biggest num is first one  "<<a;
-        }else{
-            std::cout<<"biggest num is third one  "<<c;
-        }     
-    }else{
-        if(b>c){
-            std::cout<<"biggest num is secound one  "<<b;
-        }else{
-            std::cout<<"biggest num is third one  "<<c;
-        }
-    }
+    std::cout<<"terminated!!!";
+
 }
 
 //t t
